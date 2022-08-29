@@ -3,7 +3,7 @@
 The Librarian is simple full-stack MERN application with basic CRUD operations. It serves as a virtual library where users are able to input books they've read and basic information about them. Frontend part is made in React (create-react-app), Node and Express serve as backend while data are stored in MongoDB Atlas with Mongoose modeling. It was created for purpose of getting further knowledge & practice of MERN stack, particularly Node and Express.
 
 ## Screenshot
-![alt text](https://gcdnb.pbrd.co/images/q7lLQsGWdXdo.png?o=1)
+![alt text](https://gcdnb.pbrd.co/images/P1jsQQ15X5yF.png?o=1)
 
 ## Functionality
 
