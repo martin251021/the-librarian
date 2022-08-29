@@ -76,12 +76,12 @@ export default function UpdateBookInfo() {
 
     return(
         <div className="UpdateBookInfo">
-        { loading ? <h1>Loading...</h1> :
+        { loading && !error ? <h1>Loading...</h1> :
         <div className="container">
           <div className="row">
             <div className="col-md-8 m-auto">
               <br />
-              <Link to="/" className="btn btn-outline-warning float-left">
+              <Link to="/" className="btn btn-outline-dark float-left">
                   Back to Library
               </Link>
             </div>

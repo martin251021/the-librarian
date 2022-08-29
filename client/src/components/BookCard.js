@@ -3,14 +3,21 @@ import { Link } from 'react-router-dom';
 import '../App.css';
 
 export default function BookCard(props) {
+
     const book  = props.book;
+
+    const styles = {
+        color: "black"
+    }
 
     return(
         <div className="card-container">
-            <img className='book-img' src={book.img} alt="" />
+            <Link to={`/show-book/${book._id}`}>
+                <img className='book-img' src={book.img} alt="" />
+            </Link>
             <div className="desc">
                 <h2>
-                    <Link to={`/show-book/${book._id}`}>
+                    <Link to={`/show-book/${book._id}`} style={styles}>
                         { book.title }
                     </Link>
                 </h2>

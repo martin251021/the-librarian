@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../App.css';
 import axios from 'axios';
@@ -59,7 +59,7 @@ export default function CreateBook() {
           <div className="row">
             <div className="col-md-8 m-auto">
               <br />
-              <Link to="/" className="btn btn-outline-warning float-left">
+              <Link to="/" className="btn btn-outline-dark float-left">
               Back to Library
               </Link>
             </div>
@@ -148,7 +148,7 @@ export default function CreateBook() {
 
                 <input
                     type="submit"
-                    className="btn btn-outline-warning btn-block mt-4"
+                    className="btn btn-outline-dark btn-block mt-4"
                 />
               </form>
           </div>

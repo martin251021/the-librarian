@@ -38,7 +38,7 @@ export default function ShowBookList() {
             </div>
 
             <div className="col-md-11">
-              <Link to="/create-book" className="btn btn-outline-warning float-right">
+              <Link to="/create-book" className="btn btn-outline-dark float-right">
                 + Add New Book
               </Link>
               <br />
@@ -49,7 +49,7 @@ export default function ShowBookList() {
           </div>
 
           <div className="list">
-                {loading ? <h1>Loading...</h1> : books.map((book, k) =>
+                {loading && !error ? <h1>Loading...</h1> : books.map((book, k) =>
         <BookCard book={book} key={k} />
       )}
           </div>

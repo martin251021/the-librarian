@@ -33,30 +33,31 @@
 }
 
 .CreateBook {
-  background-color: #062746de;
+  background-color: #cccecf8a;
   min-height: 100vh;
-  color: white;
+  color: black;
 }
 
 .ShowBookDetails {
-  background-color: #062746de;
+  background-color: #cccecf8a;
   min-height: 100vh;
-  color: white;
+  color: black;
+  
 }
 
 .UpdateBookInfo {
-  background-color: #062746de;
+  background-color: #cccecf8a;
   min-height: 100vh;
-  color: white;
+  color: black;
 }
 
 .ShowBookList {
-  background-color: #062746de;
+  background-color: #cccecf8a;
   height: 100%;
   width: 100%;
   min-height: 100vh;
   min-width: 100px;
-  color: white;
+  color: black;
 }
 
 
@@ -97,7 +98,7 @@
 }
 
 .desc h3 {
-  color: #6c757d;
+  color: #5e6164;
   font-size: 1em;
   padding: 10px 0 10px 0;
 }
