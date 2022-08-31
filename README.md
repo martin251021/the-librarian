@@ -26,6 +26,7 @@ Users can:
 - Mongoose
 - Express
 - Node
+- Heroku
 
 ## Getting started
 
