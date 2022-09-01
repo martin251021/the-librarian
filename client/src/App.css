@@ -70,6 +70,10 @@
   grid-gap: 2em;
 }
 
+.mobile-list {
+  margin: 20px 0 50px 0;
+}
+
 .card-container {
   width: 100%;
   border: 1px solid rgba(0,0,.125);

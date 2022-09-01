@@ -3,12 +3,15 @@ import '../App.css';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import BookCard from './BookCard';
+import { useMediaQuery } from 'react-responsive'
 
 export default function ShowBookList() {
 
     const [books, setBooks] = useState([])
     const [loading, setLoading] = useState(false)
     const [error, setError] = useState(false)
+
+    const isMobile = useMediaQuery({ query: '(max-width: 1224px)'})
 
     useEffect(() => {
         const fetchData = async() => {
@@ -48,7 +51,7 @@ export default function ShowBookList() {
 
           </div>
 
-          <div className="list">
+          <div className={isMobile ? "mobile-list" : "list"}>
                 {loading && !error ? <h1>Loading...</h1> : books.map((book, k) =>
         <BookCard book={book} key={k} />
       )}
