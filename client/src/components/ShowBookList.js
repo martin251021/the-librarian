@@ -3,7 +3,7 @@ import '../App.css';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import BookCard from './BookCard';
-import { useMediaQuery } from 'react-responsive'
+import { useMediaQuery } from 'react-responsive';
 
 export default function ShowBookList() {
 
@@ -11,7 +11,7 @@ export default function ShowBookList() {
     const [loading, setLoading] = useState(false)
     const [error, setError] = useState(false)
 
-    const isMobile = useMediaQuery({ query: '(max-width: 1224px)'})
+    const isMobile = useMediaQuery({ query: '(max-width: 900px)'})
 
     useEffect(() => {
         const fetchData = async() => {
